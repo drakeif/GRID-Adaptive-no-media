@@ -1,0 +1,81 @@
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-flow: dense; // при ресайз автоматично розміщає об'єкти - плотність розміщення елементів
+   /*  grid-template-rows: repeat(3, 100px);
+    grid-auto-flow: column; */
+    justify-content: center;
+    background-color: #0093ad;
+    max-width: 1240px;
+    min-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    font-size: 20px;
+    color: #40ac9d;
+    text-align: center;
+}
+.item-grid {
+    height: 150px;
+    margin: 15px;
+    color: #ffffff;
+    line-height: 150px;
+    font-size: 20px;
+
+    border: 2px solid #a7a412;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &:nth-child(1) {
+        background-image: url("./img/img-1.jpg");
+    }
+    &:nth-child(2) {
+        background-image: url("./img/img-2.jpg");
+    }
+    &:nth-child(3) {
+        background-image: url("./img/img-3.jpg");
+    }
+    &:nth-child(4) {
+        background-image: url("./img/img-4.jpg");
+    }
+    &:nth-child(5) {
+        background-image: url("./img/img-5.jpg");
+    }
+    &:nth-child(6) {
+        background-image: url("./img/img-6.jpg");
+    }
+    &:nth-child(7) {
+        background-image: url("./img/img-7.jpg");
+    }
+    &:nth-child(8) {
+        background-image: url("./img/img-8.jpg");
+    }
+    &:nth-child(9) {
+        background-image: url("./img/img-9.jpg");
+    }
+    &:nth-child(10) {
+        background-image: url("./img/img-10.jpg");
+    }
+    &:nth-child(11) {
+        background-image: url("./img/img-11.jpg");
+    }
+    &:nth-child(12) {
+        background-image: url("./img/img-12.jpg");
+    }
+    &:nth-child(13) {
+        background-image: url("./img/img-13.jpg");
+    }
+
+}
+.item_size_sm {
+    /* background-color: #7bbaaa; */
+    grid-column: span 1;
+}
+.item_size_md {
+    /* background-color: #f7bf57; */
+    grid-column: span 2;
+}
+.item_size_lg {
+    /* background-color: #f56a58; */
+    grid-column: span 3;
+}
